@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <script src="./js/bootstrap.js"></script>
+    <title>TechTonic</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <a class="navbar-brand" href="./index.html">TechTonic</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="position-relative overflow-hidden p-md-5 text-center bg-light" style="background-image: url(./assets/images/editorial-template-ui-design.webp); height: 200px;"></div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="display-5 fw-bold">Get In Touch</h1>
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="display-6 fw-bold">Contact Form</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputFirstName" class="form-label">First name:</label>
+                            <input type="text" class="form-control" id="inputFirstName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputLastName" class="form-label">Last name:</label>
+                            <input type="text" class="form-control" id="inputLastName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Your email:</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputSubject" class="form-label">Subject:</label>
+                            <input type="text" class="form-control" id="inputSubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Your message..." required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleSelect" class="form-label">Subject category:</label>
+                            <select class="form-select" id="exampleSelect" required="">
+                                <option selected="" value="">Pick a category...</option>
+                                <option value="services">Services</option>
+                                <option value="help">Help</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="inputCheck">
+                            <label class="form-check-label" for="inputCheck">I want to receive the newsletter.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="display-6 fw-bold">Our Office</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19875.029903030685!2d-0.1531714466273403!3d51.48791699093052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604df72f6b5d3%3A0xe1484bf7be0f2b3!2sMicrosoft%20Bing!5e0!3m2!1sen!2shr!4v1674991773896!5m2!1sen!2shr" width="450" height="600" style="border: 0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="./services.html" class="nav-link px-2 text-muted">Services</a></li>
+          <li class="nav-item"><a href="./portfolio.html" class="nav-link px-2 text-muted">Portfolio</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">Copyright &copy; 2023 - Mislav Kapulica
+            <a href="https://github.com/CriminalPotato/ITM-Internetska-platforma">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </p>
+      </footer>
+</body>
+</html>
